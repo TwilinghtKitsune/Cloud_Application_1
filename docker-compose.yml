@@ -1,0 +1,22 @@
+﻿version: '2.5'
+
+services:  
+  cloud_application_bd:
+    image: postgres:latest
+    container_name: "cloud_application_bd"
+    restart: always
+    user: postgres
+    env_file:
+      - .env
+    
+    healthcheck:
+      test: /usr/bin/pg_isready
+      interval: 3s
+      timeout: 3s
+
+  cloud_application_1:
+    image: ${DOCKER_REGISTRY-}cloudapplication1
+    build:
+      context: .
+      dockerfile: Cloud_Application_1/Dockerfile
+   

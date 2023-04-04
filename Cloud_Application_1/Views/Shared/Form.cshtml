@@ -1,0 +1,44 @@
+﻿<input type="hidden" value="@ViewBag.Editor" name="character" />
+<table>
+    <tr>
+        <td><p>Имя персонажа :</p></td>
+        <td><input required type="text" name="Name" value="@ViewBag.Editor.Name" /> </td>
+    </tr>
+    <tr>
+        <td><p>Раса персонажа :</p></td>
+        <td>
+            <input required type="text" name="Race" value="@ViewBag.Editor.Race" />
+        </td>
+    </tr>
+    <tr>
+        <td><p>Уровень персонажа :</p></td>
+        <td>
+            <input required type="text" name="Lvl" value="@ViewBag.Editor.Lvl" />
+        </td>
+    </tr>
+    <tr>
+        <td><p>Описание персонажа :</p></td>
+        <td>
+            <input type="text" name="Description" value="@ViewBag.Editor.Description" />
+        </td>
+    </tr>
+    <tr>
+        <td><p>Мастер :</p></td>
+        <td>
+            <select name="Master">
+                @foreach (var m in ViewBag.Masters)
+                {
+                    if (ViewBag.Editor.Master == m.Id)
+                    {
+                                <option selected value="@m.Id">@m.Id) @m.Name</option>
+                    }
+                    else
+                    {
+                                <option value="@m.Id">@m.Id) @m.Name</option>
+                    }
+                }
+            </select>
+        </td>
+    </tr>
+    <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+</table>

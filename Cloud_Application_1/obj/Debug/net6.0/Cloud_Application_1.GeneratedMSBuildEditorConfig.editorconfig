@@ -1,0 +1,37 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Cloud_Application_1
+build_property.RootNamespace = Cloud_Application_1
+build_property.ProjectDir = C:\Users\Katerina\Desktop\All\My works\3 course 2 semester\Cloud_Application\Cloud_Application_1\Cloud_Application_1\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Katerina\Desktop\All\My works\3 course 2 semester\Cloud_Application\Cloud_Application_1\Cloud_Application_1
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Katerina/Desktop/All/My works/3 course 2 semester/Cloud_Application/Cloud_Application_1/Cloud_Application_1/Views/Home/Character.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGFyYWN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Katerina/Desktop/All/My works/3 course 2 semester/Cloud_Application/Cloud_Application_1/Cloud_Application_1/Views/Home/Editor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Katerina/Desktop/All/My works/3 course 2 semester/Cloud_Application/Cloud_Application_1/Cloud_Application_1/Views/Home/EditorMaster.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0b3JNYXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Katerina/Desktop/All/My works/3 course 2 semester/Cloud_Application/Cloud_Application_1/Cloud_Application_1/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Katerina/Desktop/All/My works/3 course 2 semester/Cloud_Application/Cloud_Application_1/Cloud_Application_1/Views/Shared/Form.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

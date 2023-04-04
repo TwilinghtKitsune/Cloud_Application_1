@@ -1,0 +1,25 @@
+﻿@{ Layout = null; }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>EditorMaster</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="">
+            <input type="hidden" value="@ViewBag.Master" name="Master" />
+            <table>
+                <tr>
+                    <td><p>Имя мастера :</p></td>
+                    <td><input required type="text" name="Name" value="@ViewBag.Master.Name" /> </td>
+                </tr>
+                <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+            </table>
+        </form>
+        <p><a href="/Home">Назад</a></p>
+    </div>
+</body>
+</html>

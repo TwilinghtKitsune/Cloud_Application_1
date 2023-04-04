@@ -1,0 +1,51 @@
+name: dockercompose12806161351386469562
+services:
+  cloud_application_1:
+    build:
+      context: C:\Users\Katerina\Desktop\All\My works\3 course 2 semester\Cloud_Application\Cloud_Application_1
+      dockerfile: Cloud_Application_1/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: cloudapplication1
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+    - mode: ingress
+      target: 443
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: C:\Users\Katerina\AppData\Roaming/Microsoft/UserSecrets
+      target: /root/.microsoft/usersecrets
+      read_only: true
+      bind:
+        create_host_path: true
+    - type: bind
+      source: C:\Users\Katerina\AppData\Roaming/ASP.NET/Https
+      target: /root/.aspnet/https
+      read_only: true
+      bind:
+        create_host_path: true
+  cloud_application_bd:
+    container_name: cloud_application_bd
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_PASSWORD: Cloud123
+      POSTGRES_USER: ​postgres​
+    healthcheck:
+      test:
+      - CMD-SHELL
+      - /usr/bin/pg_isready
+      timeout: 3s
+      interval: 1s
+    image: postgres:latest
+    networks:
+      default: null
+    restart: always
+networks:
+  default:
+    name: dockercompose12806161351386469562_default

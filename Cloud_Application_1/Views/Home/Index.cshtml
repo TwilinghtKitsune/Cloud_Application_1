@@ -1,0 +1,55 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Разные персонажи</title>
+</head>
+<body>
+    <div>
+        <h3>ПЕРСОНАЖИИИИИИИ</h3>
+        <table>
+            <tr>
+                <td><p>Id</p></td>
+                <td><p>Имя</p></td>
+                <td><p>Раса</p></td>
+                <td><p>Уровень</p></td>
+                <td><p>Мастер</p></td>
+            </tr>
+            @foreach (var c in ViewBag.Characters)
+            {
+                    <tr>
+                        <td><p>@c.Id</p></td>
+                        <td><p>@c.Name</p></td>
+                        <td><p>@c.Race</p></td>
+                        <td><p>@c.Lvl</p></td>
+                        <td><p>@c.Master</p></td>
+                        <td><p><a href="/Home/Open/@c.Id">Открыть</a></p></td>
+                    </tr>
+            }
+        </table>
+        <p><a href="/Home/AddCharacter">Добавить персонажа</a></p>
+        <h3>МАСТЕРААААА</h3>
+        <table>
+            <tr>
+                <td><p>Id</p></td>
+                <td><p>Имя</p></td>
+            </tr>
+            @foreach (var m in ViewBag.Masters)
+            {
+                    <tr>
+                        <td><p>@m.Id</p></td>
+                        <td><p>@m.Name</p></td>
+                        <td><p><a href="/Home/СhangeMaster/@m.Id">Изменить</a></p></td>
+                        <td><p><a href="/Home/DeleteMaster/@m.Id">Удалить</a></p></td>
+                    </tr>
+            }
+        </table>
+        <p><a href="/Home/AddMaster">Добавить мастера</a></p>
+    </div>
+</body>
+</html>

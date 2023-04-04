@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Character</title>
+</head>
+<body>
+    <div>
+        <p>@ViewBag.Character.Name</p>
+        <p>@ViewBag.Character.Race</p>
+        <p>@ViewBag.Character.Lvl</p>
+        <p>@ViewBag.Character.Master</p>
+        <p>@ViewBag.Character.Description</p>
+        <p><a href="/Home/Сhange/@ViewBag.Character.Id">Изменить</a></p>
+        <p><a href="/Home/Delete/@ViewBag.Character.Id">Удалить</a></p>
+        <p><a href="/Home">Назад</a></p>
+    </div>
+</body>
+</html>

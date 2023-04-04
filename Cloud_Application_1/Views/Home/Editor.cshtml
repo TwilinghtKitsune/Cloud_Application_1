@@ -1,0 +1,32 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Editor</title>
+</head>
+<body>
+    <div>
+        @if (ViewBag.New)
+        {
+            using (Html.BeginForm("AddCharacter", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                Html.RenderPartial("Form");
+            }
+            <p><a href="/Home">Назад</a></p>
+        }
+        else
+        {
+            using (Html.BeginForm("Сhange", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                Html.RenderPartial("Form");
+            }
+            <p><a href="/Home/Open/@ViewBag.Editor.Id">Назад</a></p>
+        }
+    </div>
+</body>
+</html>
